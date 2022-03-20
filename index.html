@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>NYTimes Books</title>
+        <meta name="description" content="NYTimes API example">
+    
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="./public/css/style.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/paper-css/0.4.1/paper.min.css">
+    
+</head>
+<body>
+    <div class="container">
+
+        <div class="alert alert-dismissible alert-danger" id="error-ajax">
+            <button type="button" class="close" data-dismiss="alert">x</button>
+            <strong>Oh Error!</strong> Error al cargar los datos del <a href="http://developer.nytimes.com/" target="_blank" class="alert-link">NYTimes API</a>
+        </div>
+
+        <div class="page-header">
+            <img id="foto-portada" src="https://nytimes.com/vi-assets/static-assets/NYT-BestSeller-1200x675-699eb842421d5076f318fe0df3d903a5.png">
+            <h3 id="titulo_lista"></h3>
+            
+        </div>
+        <div id="cargando">
+            <img src="https://i.gifer.com/ZZ5H.gif">
+        </div>
+
+        <div class="row" id="row-contenido">
+            <div id="back-boton">
+                <a class="btn btn-danger">
+                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span> Índice
+                </a>
+            </div>
+            <div class="col-md-3" id="col1"></div>
+            <div class="col-md-3" id="col2"></div>
+            <div class="col-md-3" id="col3"></div>
+            <div class="col-md-3" id="col4"></div>
+        </div>
+
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <p class="text-muted">
+                <a href="http://developer.nytimes.com/" target="_blank"><img src="http://graphics8.nytimes.com/packages/images/developer/logos/poweredby_nytimes_200b.png"></a>
+            </p>
+        </div>
+    </footer>  
+    <script src="./JS/script.js"></script>
+</body>
+</html>

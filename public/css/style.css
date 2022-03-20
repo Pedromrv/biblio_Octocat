@@ -1,0 +1,53 @@
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    /* Margin bottom by footer height */
+    margin-bottom: 60px;
+}
+
+.amazon {
+    width: 125px;
+}
+
+ul {
+    padding: 0px;
+}
+
+li {
+    list-style-type: none;
+}
+
+#foto-portada {
+    margin-bottom: -15px;
+    width:100%;
+}
+
+#back-boton {
+    display: none;
+    margin-bottom: 20px;
+}
+
+#error-ajax {
+    display: none;
+}
+
+#cargando {
+    float: none;
+    margin: auto;
+}
+
+.caratula {
+    width: 230px;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    /* Set the fixed height of the footer here */
+    height: 40px;
+    background-color: #F1F1F1;
+}
